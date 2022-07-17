@@ -18,3 +18,10 @@ Just like most bulk emailing softwares lemty's goal is to improve email deliveri
 
 #### Tech Stack
 To accommodate the this many features and still build as solid application I chose:
+* Spring Boot (Java framework for building REST APIs)
+* ReactJS (Frontend)
+* Postgresql (Database)
+* Quartz (Job Scheduling)
+* Gmail API
+* Heroku (Backend Server)
+* Netlify (Frontend Server)
