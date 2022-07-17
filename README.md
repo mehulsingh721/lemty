@@ -25,3 +25,7 @@ To accommodate the this many features and still build as solid application I cho
 * Gmail API
 * Heroku (Backend Server)
 * Netlify (Frontend Server)
+
+## How it works
+### Sending Emails
+When the campaign is started, the first thing it will do is loop through all the prospects in campaign and create jobs for each prospect in quartz database. __This job includes email data to be sent__
