@@ -36,4 +36,19 @@ Just before a job is finished running data like, sent time step completed etc. w
 ### Tracking
 At first, when I thought of tracking feaures, I was clueless about everything but as I progressed in the project, it was the easiest part.
 1. #### Open Tracking
-    You just simply attach a 1 x 1px image url to every email.
+    You just simply attach a 1 x 1px image url to every email and when an email is opened there will be a __GET__ request to our server for the image with URL parameter of __Sent Email Id__ in our database and from that we can simply update our data.
+
+2. #### Click Tracking
+    When a user adds a link to email body, our server replaces that link with our tracking link and add url parameter named __URL__ with value of link in email body.(same for every link in the body). So when the link is clicked it will first go to our link and as soon as request is made, our server will redirect prospect to the user's link and our servver will update the data.
+
+## Upcoming Features
+* __Campaign Playbook__ : Automate the journey of prospects.
+* __Reply Tracking__: Track replies for all emails sent from our softwares.
+* __Google Sheets Integration__: Directly import prospects from google sheets.
+* __CMS Integration__
+* __Few UI Tewaks__
+
+## Known Issues
+* adding step to existing campaign does not create new jobs.
+* campaign preview buggy.
+* Server shut down after 30 min
