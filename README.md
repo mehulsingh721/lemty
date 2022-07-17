@@ -32,3 +32,8 @@ When the campaign is started, the first thing it will do is loop through all the
 
 And after that first email job will be triggered. And when that job fires it will trigger next job __with a interval specified in settings__.
 Just before a job is finished running data like, sent time step completed etc. will be updated and if there is a follow up email then that will be scheduled too.
+
+### Tracking
+At first, when I thought of tracking feaures, I was clueless about everything but as I progressed in the project, it was the easiest part.
+1. #### Open Tracking
+You just simply attach a 1 x 1px image url to every email.
