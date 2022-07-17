@@ -29,3 +29,6 @@ To accommodate the this many features and still build as solid application I cho
 ## How it works
 ### Sending Emails
 When the campaign is started, the first thing it will do is loop through all the prospects in campaign and create jobs for each prospect in quartz database. __This job includes email data to be sent__
+
+And after that first email job will be triggered. And when that job fires it will trigger next job __with a interval specified in settings__.
+Just before a job is finished running data like, sent time step completed etc. will be updated and if there is a follow up email then that will be scheduled too.
